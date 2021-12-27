@@ -1,264 +1,214 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt_BR" class="h-100">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#000000" />
+
+    <!-- Base -->
+    <title>KAIOPIOLA.DEV</title>
+    <meta name="description" content="Opa, beleza? Aqui você vai encontrar meus projetos pessoais, links, contato, entre outros!">
+    <meta name="keywords"
+        content="kaio, piola, kaio piola, kaiopiola, kaiopiola.dev, backend, back end, back-end, fullstack, web dev, web development, web developer, developer, desenvolvedor web, github, facebook, facebook meta, meta, metaverse">
+
+    <!-- Facebook -->
+    <meta property="og:title" content="KAIOPIOLA.DEV" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="KAIOPIOLA.DEV" />
+    <meta property="og:url" content="https://kaiopiola.dev" />
+    <meta property="og:image" content="logo_colorido.png" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:description" content="Opa, beleza? Aqui você vai encontrar meus projetos pessoais, links, contato, entre outros!" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter -->
+    <meta property="twitter:title" content="KAIOPIOLA.DEV" />
+    <meta property="twitter:description" content="Opa, beleza? Aqui você vai encontrar meus projetos pessoais, links, contato, entre outros!" />
+    <meta property="twitter:image" content="logo_colorido.png" />
+    <meta property="twitter:url" content="https://kaiopiola.dev" />
+    <meta property="twitter:card" content="summary" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLMCEQC2EH"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-KLMCEQC2EH');
     </script>
 
-    <title>HACKEARAM MEU SITE</title>
+
 </head>
 
 <style>
-    body {
-        font-family: 'Roboto Condensed', sans-serif;
+    .logo {
+        max-width: 14rem;
     }
 
-    .bg-dark {
-        background-color: black !important;
+    .icone {
+        max-width: 8rem;
     }
 
-    .red {
-        color: red;
+    .animated-gradient {
+        animation: animateBg 10s linear infinite;
+        background-image: linear-gradient(90deg, #181a68, #670464, #181a68, #670464);
+        background-size: 300% 100%;
     }
 
-    hr {
-        display: block;
-        height: 1px;
-        border: 0;
-        border-top: 2px solid red;
-        margin: 1em 0;
-        padding: 0;
+    @keyframes animateBg {
+        0% {
+            background-position: 0% 0%;
+        }
+
+        100% {
+            background-position: 100% 0%;
+        }
     }
 
-    a {
-        text-decoration: none !important;
-        color: white;
+    ul {
+        list-style-type: none;
     }
 
+    a,
+    a:hover,
     a:visited {
-        color: rgb(255, 255, 255);
+        text-decoration: none;
+        color: unset;
     }
 
-    a:hover {
-        color: rgb(255, 0, 0);
+    .links li a {
+        font-size: 24px;
     }
 
-    .cookie {
+    .fundo-php {
         position: fixed;
-        width: 100%;
-        bottom: 0;
-        z-index: 2;
+        z-index: -1;
+        font-size: 2.5rem;
+        opacity: 0.2;
+        color: #f451ff;
     }
 
-    .cookie .container {
-        background-color: #313131ce;
-        padding: 1rem 2rem 2rem 3rem;
-        border-radius: 15px 15px 0 0;
+    .fundo-text {
+        max-height: 100% !important;
     }
 
-    video {
-        width: 18rem;
-        height: 100%;
+    .lead {
+        text-align: center;
     }
 
-    .link {
-        cursor: pointer;
-        text-decoration: none !important;
-        color: white;
-    }
-
-    link:hover {
-        color: rgb(255, 0, 0);
-    }
-
-    footer {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        background-color: black;
+    @media(max-width:768px) {
+        .lead {
+            text-align: justify;
+        }
     }
 </style>
 
-<script>
+<body class="d-flex h-100 text-center text-white bg-dark animated-gradient">
 
-    $("body,html").one("touchstart touchmove scroll mousemove mousedown DOMMouseScroll mousewheel keyup", function (e) {
-        var vid = document.getElementById("video");
-        vid.volume = 0.1;
+    <div class="fundo-php text-start">
+        <pre class="fundo-text" style="word-wrap: break-word; white-space: pre-wrap;"></pre>
+    </div>
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>
+                <h3 class="float-md-start mb-0">
+                    <img src="logo_branco.png" class="img-fluid logo" alt="Logo KAIOPIOLA.DEV">
+                </h3>
+                <!-- <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Projetos</a>
+                    <a class="nav-link" href="#">Contato</a>
+                </nav> -->
+            </div>
+        </header>
+
+        <main class="px-3">
+            <h1>Olá, eu sou o Kaio! <img src="icon_transparente.png" class="img-fluid icone" alt="Ícone KAIOPIOLA.DEV">
+            </h1>
+            <p class="lead">
+                <span id="idade">X</span> anos, desenvolvedor web back-end e apaixonado por filmes antigos :) <br>
+                Aqui você irá encontrar projetos [geralmente pessoais] no quais estou trabalhando e me acompanhar nessa
+                saga de eterno aprendizado que é a vida de um dev! <br>
+                Abaixo, seguem meus links para redes sociais, fóruns de tecnologia e claro, meu Github!
+            </p>
+
+            <ul class="links">
+                <li><a href="https://github.com/kaiopiola" target="_blank">
+                        <ion-icon name="logo-github"></ion-icon>/kaiopiola
+                    </a></li>
+                <li><a href="https://www.linkedin.com/in/kaiopiola/" target="_blank">
+                        <ion-icon name="logo-linkedin"></ion-icon>/kaiopiola
+                    </a></li>
+                <li><a href="https://www.instagram.com/kaiopiola/" target="_blank">
+                        <ion-icon name="logo-instagram"></ion-icon>/kaiopiola
+                    </a></li>
+                <li><a href="https://www.facebook.com/kaiopiola" target="_blank">
+                        <ion-icon name="logo-facebook"></ion-icon>/kaiopiola
+                    </a></li>
+            </ul>
+
+            <p class="lead">
+                <i>"O futuro está além daquilo que podemos imaginar."</i>
+            </p>
+        </main>
+
+        <footer class="mt-auto text-white-50">
+            <p>2021 Kaio Piola</p>
+        </footer>
+    </div>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("#idade").html(minhaIdade());
+        getFundo();
     });
 
-    function easter_egg(method = null) {
-        $("#easter_egg").show();
-        window.history.replaceState(null, null, "?easter_egg=true");
-
-        if (method == null) {
-            gtag('event', 'easter_egg', {
-                'method': 'Na curiosidade mesmo'
-            });
-        } else {
-            gtag('event', 'easter_egg', {
-                'method': method
-            });
-        }
-
-        if (method == "Click") {
-            console.log('Easter egg ativado do jeito certo!');
-        } else {
-            console.log('Easter egg ativado do jeito curioso!');
-        }
-
-
+    function minhaIdade() {
+        let d1 = Date.now();
+        let d2 = new Date(1998, 6, 18).getTime();
+        let date1 = new Date(d1);
+        let date2 = new Date(d2);
+        let yearsDiff = date2.getFullYear() - date1.getFullYear();
+        return yearsDiff * (-1);
     }
 
-    $(document).ready(function () {
-        if (document.cookie.indexOf('politicas=') != -1) {
-            document.getElementById("cookie").style.display = "none";
-        } else {
-            document.getElementById("cookie").style.display = "block";
-        }
-    });
+    function getFundo() {
+        $.ajax({
+            type: "GET",
+            url: "https://raw.githubusercontent.com/kaiopiola/Blog-CMS/main/app/Http/Controllers/BlogController.php",
+            dataType: 'html',
 
+            success: function (response) {
+                let content = response;
+                content = content.replace("<", "&#8249;");
+                content = content.replace(">", "&#8250;");
+                console.log(content);
+                $(".fundo-text").html(content);
 
-    function cookieClick() {
-        document.cookie = "politicas=aceito;path=/";
-        document.getElementById("cookie").style.display = "none";
+            }
+        });
     }
 
 
 </script>
-
-<body class="text-light bg-dark">
-
-    <div class="cookie" id="cookie">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 my-auto">
-                    EAI VACILÃO, VAI UM BISCOITO? 🍪 <br>
-                    ESSE SITE USA ALGUNS COOKIES VIRTUAIS PRA TE RASTREAR NA NET E TE ESPIONAR 👀<br>
-                    SE QUISER SABER MAIS SOBRE OQ COLETAMOS, <a class="link" data-bs-toggle="modal"
-                        data-bs-target="#politicas">CLICA AQUI</a>!
-                </div>
-                <div class="col-md-4 text-center my-auto">
-                    <button class="btn btn-danger" onclick="cookieClick();">BELEZA!👍</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container mt-2">
-        <div class="row text-center justify-content-center">
-            <div class="col-md-12">
-                <h2>HACKEARAM</h2>
-                <h2 class="red">MEU $SITE!</h2>
-                <p class="red">VOCÊ SOFREU UMA OPORTUNIDADE</p>
-            </div>
-            <div class="col-md-6">
-                <hr class="mb-3">
-            </div>
-            <div class="col-md-12">
-                <h2>NENHUM DADO FOI <span onclick="easter_egg('Click');" class="red">COPIADO OU EXCLUÍDO</span> POIS JÁ
-                    NÃO
-                    HAVIA NADA AQUI ANTES!</h2>
-            </div>
-
-            <div class="row mt-3">
-                <div class="col-md-12">
-                    <h2>NOS CONTATE CASO QUEIRAM AJUDAR EM NOSSOS PROJETOS E ADQUIRIR CONHECIMENTO.</h2>
-                </div>
-            </div>
-
-            <div class="row mt-5">
-                <div class="col-4 col-md-6 text-end">
-                    <h4><span class="red">TELEGRAM:</span>
-                </div>
-                <div class="col-8 col-md-6 text-start">
-                    <h4><a href="https://t.me/+UuF8-QOuMR01ZGUx" target="_blank">https://t.me/+UuF8-QOuMR01ZGUx</a></h4>
-                </div>
-                <div class="col-4 col-md-6 text-end">
-                    <h4><span class="red">BEACONS:</span>
-                </div>
-                <div class="col-8 col-md-6 text-start">
-                    <h4><a href="https://beacons.ai/kaiopiola" target="_blank">https://beacons.ai/kaiopiola</a></h4>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<footer>
-    <div class="container mb-2">
-        <div class="row text-center">
-            <div class="col-md-12">
-                Site feito por mim mesmo. Se tiver clicado em aceitar os cookie sem ler, pode <a class="link" data-bs-toggle="modal"
-                data-bs-target="#politicas">clicar aqui</a> pra fazer o favor de saber onde você está se metendo!
-            </div>
-        </div>
-    </div>
-</footer>
-
-
-
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="politicas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content bg-dark text-light">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">ESTOU SENDO ESPIONADO? 😳</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Não está não, rlx! <span style="color: rgb(20, 20, 20);">Não que você saiba hehe</span><br>
-                    Apesar de praticamente não ter nada nesse site mais ou menos que eu fiz completamente nas coxas, a
-                    lei me
-                    obriga a falar pra vc tudo que eu tô coletando ou ao que vc esteja exposto enquanto estiver
-                    navegando
-                    por aqui (seja lá por qual motivo).. <br>
-                    Então vamo lá <br>
-                    Essa página aqui, tá hospedada em um serviço de colaboração e versionamento de softwares, chamado
-                    Github, e apresentada sob um serviço
-                    de páginas separado chamado Github Pages, se quiser saber mais sobre eles dá uma lida <a
-                        href="https://docs.github.com/en/github/site-policy/github-privacy-statement">CLICANDO AQUI</a>
-                    pq
-                    eu n vou perder tempo explicando nesse modalzinho aqui nem ferrando. <br>
-                    Pra gente medir o interesse de vcs e os acessos dessa página, usamos um negócio chamado Google
-                    Analytics. Ele coleta as páginas q vc acessa, o tempo q vc fica no site, e inclusive ele rastreia se
-                    vc já conseguiu encontrar o easter egg dessa página :p <br>
-                    Mas enfim, é isso, se tiver mais dúvidas tem meus contatos ai no site tbm. <br>
-                    Valeu é nois!
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
 
 </html>
