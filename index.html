@@ -1,236 +1,131 @@
 <!DOCTYPE html>
-<html lang="pt_BR" class="h-100">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaio Piola</title>
 
     <!-- Base -->
-    <meta name="description" content="Opa, beleza? Aqui você vai encontrar meus projetos pessoais, links, contato, entre outros!">
+    <meta name="description" content="Web developer, PHP programmer and technology enthusiast!">
     <meta name="keywords"
         content="kaio, piola, kaio piola, kaiopiola, kaiopiola.dev, backend, back end, back-end, fullstack, web dev, web development, web developer, developer, desenvolvedor web, github, facebook, facebook meta, meta, metaverse">
 
-    <!-- Facebook -->
+         <!-- Facebook -->
     <meta property="og:title" content="KAIOPIOLA.DEV" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="KAIOPIOLA.DEV" />
     <meta property="og:url" content="https://kaiopiola.dev" />
-    <meta property="og:image" content="https://kaiopiola.dev/logo_colorido.png" />
+    <meta property="og:image" content="https://kaiopiola.dev/icon_transparente.png" />
     <meta property="og:image:type" content="image/png">
-    <meta property="og:description" content="Opa, beleza? Aqui você vai encontrar meus projetos pessoais, links, contato, entre outros!" />
+    <meta property="og:description" content="Web developer, PHP programmer and technology enthusiast!" />
     <meta property="og:locale" content="pt_BR" />
 
     <!-- Twitter -->
     <meta property="twitter:title" content="KAIOPIOLA.DEV" />
-    <meta property="twitter:description" content="Opa, beleza? Aqui você vai encontrar meus projetos pessoais, links, contato, entre outros!" />
-    <meta property="twitter:image" content="https://kaiopiola.dev/logo_colorido.png" />
+    <meta property="twitter:description" content="Web developer, PHP programmer and technology enthusiast!" />
+    <meta property="twitter:image" content="https://kaiopiola.dev/icon_transparente.png" />
     <meta property="twitter:url" content="https://kaiopiola.dev" />
     <meta property="twitter:card" content="summary" />
-    
-    <title>KAIOPIOLA.DEV</title>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLMCEQC2EH"></script>
+
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLMCEQC2EH"></script>
-    
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-KLMCEQC2EH');
-    </script>
-    
-    <!--  Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5974964001800449"
-     crossorigin="anonymous"></script>
 </head>
-
-<style>
-    .logo {
-        max-width: 14rem;
-    }
-
-    .icone {
-        max-width: 8rem;
-    }
-
-    .animated-gradient {
-        animation: animateBg 10s linear infinite;
-        background-image: linear-gradient(90deg, #181a68, #670464, #181a68, #670464);
-        background-size: 300% 100%;
-    }
-
-    @keyframes animateBg {
-        0% {
-            background-position: 0% 0%;
-        }
-
-        100% {
-            background-position: 100% 0%;
-        }
-    }
-
-    ul {
-        list-style-type: none;
-    }
-
-    a,
-    a:hover,
-    a:visited {
-        text-decoration: none;
-        color: unset;
-    }
-
-    .links li a {
-        font-size: 24px;
-    }
-
-    .fundo-php {
-        position: fixed;
-        z-index: -1;
-        font-size: 2.5rem;
-        opacity: 0.2;
-        color: #f451ff;
-    }
-
-    .fundo-text {
-        max-height: 100% !important;
-    }
-
-    .lead {
-        text-align: center;
-    }
-
-    @media(max-width:768px) {
-        .lead {
-            text-align: justify;
-        }
-    }
-</style>
-
-<body class="d-flex h-100 text-center text-white bg-dark animated-gradient">
-
-    <div class="fundo-php text-start">
-        <pre class="fundo-text" style="word-wrap: break-word; white-space: pre-wrap;"></pre>
-    </div>
-
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="mb-auto">
-            <div>
-                <h1 class="d-none">KAIOPIOLA.DEV</h1>
-                <h3 class="float-md-start mb-0">
-                    <img src="logo_branco.png" class="img-fluid logo">
-                </h3>
-                <!-- <nav class="nav nav-masthead justify-content-center float-md-end">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Projetos</a>
-                    <a class="nav-link" href="#">Contato</a>
-                </nav> -->
+<body>
+    <main class="mt-md-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 d-flex justify-content-center">
+                    <h1 class="my-auto">KAIO PIOLA</h1>
+                    <img src="https://github.com/kaiopiola/kaiopiola.github.io/raw/main/icon_transparente.png" class="img-fluid my-auto" alt="Logo Kaio Piola">
+                </div>
             </div>
-        </header>
+            <hr>
+            <div class="row text-center">
+                <p>Web developer, PHP programmer and technology enthusiast!</p>
+            </div>
+        </div>
 
-        <main class="px-3">
-            <h1>Olá, eu sou o Kaio! <img src="icon_transparente.png" class="img-fluid icone" alt="Ícone KAIOPIOLA.DEV">
-            </h1>
-            <p class="lead">
-                <span id="idade">X</span> anos, desenvolvedor web back-end e apaixonado por filmes antigos :) <br>
-                Aqui você irá encontrar projetos [geralmente pessoais] no quais estou trabalhando e me acompanhar nessa
-                saga de eterno aprendizado que é a vida de um dev! <br>
-                Abaixo, seguem meus links para redes sociais, fóruns de tecnologia e claro, meu Github!
-            </p>
+        <div class="container mt-1 mt-md-3 d-none">
+            <h3>My projects</h3>
+            <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                <option selected>Project 1</option>
+                <option value="1">Project 2</option>
+                <option value="2">Project 3</option>
+                <option value="3">Project 4</option>
+                </select>
+                <label for="floatingSelect">Select a Project</label>
+            </div>
+        </div>
 
-            <ul class="links">
-                <li><a href="https://github.com/kaiopiola" target="_blank">
-                        <ion-icon name="logo-github"></ion-icon>/kaiopiola
-                    </a></li>
-                <li><a href="https://www.linkedin.com/in/kaiopiola/" target="_blank">
-                        <ion-icon name="logo-linkedin"></ion-icon>/kaiopiola
-                    </a></li>
-                <li><a href="https://www.instagram.com/kaiopiola/" target="_blank">
-                        <ion-icon name="logo-instagram"></ion-icon>/kaiopiola
-                    </a></li>
-                <li><a href="https://www.facebook.com/kaiopiola" target="_blank">
-                        <ion-icon name="logo-facebook"></ion-icon>/kaiopiola
-                    </a></li>
-                <!-- <li><a href="https://t.me/+UuF8-QOuMR01ZGUx" target="_blank">
-                        <ion-icon name="logo-telegram"></ion-icon>Grupo no Telegram
-                    </a></li> -->
+        <div class="container mt-1 mt-md-3">
+            <h3>Links</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="https://www.tabnews.com.br/KaioPiola" target="_blank" class="text-decoration-none">
+                        <div class="btn-group">
+                            <span class="btn btn-dark active">
+                                <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="18" width="18" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.9999 4C20.6568 4 21.9999 5.34315 21.9999 7V17C21.9999 18.6569 20.6568 20 18.9999 20H4.99994C3.34308 20 1.99994 18.6569 1.99994 17V7C1.99994 5.34315 3.34308 4 4.99994 4H18.9999ZM19.9999 9.62479H13C12.4478 9.62479 11.8442 9.20507 11.652 8.68732L10.6542 6H4.99994C4.44765 6 3.99994 6.44772 3.99994 7V17C3.99994 17.5523 4.44765 18 4.99994 18H18.9999C19.5522 18 19.9999 17.5523 19.9999 17V9.62479Z" fill="currentColor"></path></svg>
+                            </span>
+                            <span class="btn btn-light">/kaiopiola</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://github.com/kaiopiola/" target="_blank" class="text-decoration-none">
+                        <div class="btn-group">
+                            <span class="btn btn-dark active">
+                                <i class="bi bi-github"></i>
+                            </span>
+                            <span class="btn btn-light">/kaiopiola</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://packagist.org/packages/kaiopiola/" target="_blank" class="text-decoration-none">
+                        <div class="btn-group">
+                            <span class="btn btn-dark active">
+                                <i class="bi bi-box-seam"></i>
+                            </span>
+                            <span class="btn btn-light">/kaiopiola</span>
+                        </div>
+                    </a>
+                </li>
+                <!-- <li class="list-group-item"></li>
+                <li class="list-group-item"></li> -->
             </ul>
-            
-            <iframe src="https://github.com/sponsors/kaiopiola/card" title="Sponsor kaiopiola" height="225" width="600" style="border: 0;"></iframe>
-
-            <p class="lead">
-                <i>"O futuro está além daquilo que podemos imaginar."</i>
-            </p>
-        </main>
-
-        <footer class="mt-auto text-white-50">
-            <p>2021 Kaio Piola</p>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5974964001800449"
-     crossorigin="anonymous"></script>
-<!-- Ad2 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5974964001800449"
-     data-ad-slot="9411549063"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-        </footer>
-    </div>
-
+        </div>
+        <div class="container mt-1 mt-md-3">
+            <h3>Contact</h3>
+            <div>
+                <p><b><i class="bi bi-envelope"></i> Mail: </b> <a href="mailto:kaio.piola@hotmail.com" class="">kaio.piola@hotmail.com</a></p>
+                <p><b><i class="bi bi-telegram"></i> Telegram: </b><a href="#">soon</a></p>
+            </div>
+        </div>
+        <div class="container mt-1 mt-md-3">
+            <h3>Sponsor me <i class="bi bi-heart-fill"></i></h3>
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <div class="border border-1 rounded">
+                        <iframe src="https://github.com/sponsors/kaiopiola/card" title="Sponsor kaiopiola" height="225" width="auto" style="border: 0;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
-
-<script>
-    $(document).ready(function () {
-        $("#idade").html(minhaIdade());
-        getFundo();
-    });
-
-    function minhaIdade() {
-        let d1 = Date.now();
-        let d2 = new Date(1998, 6, 18).getTime();
-        let date1 = new Date(d1);
-        let date2 = new Date(d2);
-        let yearsDiff = date2.getFullYear() - date1.getFullYear();
-        return yearsDiff * (-1);
-    }
-
-    function getFundo() {
-        $.ajax({
-            type: "GET",
-            url: "https://raw.githubusercontent.com/kaiopiola/seo-package/main/src/Seo.php",
-            dataType: 'html',
-
-            success: function (response) {
-                let content = response;
-                content = content.replace("<", "&#8249;");
-                content = content.replace(">", "&#8250;");
-                console.log(content);
-                $(".fundo-text").html(content);
-
-            }
-        });
-    }
-
-
-</script>
-
 </html>
