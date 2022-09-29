@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laravel Vite - Kaio Piola</title>
+
+    <!-- Base -->
+    <meta name="description" content="Web developer, PHP programmer and technology enthusiast!">
+    <meta name="keywords"
+        content="kaio, piola, kaio piola, kaiopiola, kaiopiola.dev, backend, back end, back-end, fullstack, web dev, web development, web developer, developer, desenvolvedor web, github, facebook, facebook meta, meta, metaverse">
+    <link rel="icon" href="https://kaiopiola.dev/icon_transparente.png" type="image/icon type">
+    <meta name="theme-color" content="#000">
+
+    <!-- Facebook -->
+    <meta property="og:title" content="Tutorial Laravel Vite - Kaio Piola" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Tutorial Laravel Vite - Kaio Piola" />
+    <meta property="og:url" content="https://kaiopiola.dev" />
+    <meta property="og:image" content="https://kaiopiola.dev/icon_transparente.png" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:description" content="Web developer, PHP programmer and technology enthusiast!" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter -->
+    <meta property="twitter:title" content="Tutorial Laravel Vite - Kaio Piola" />
+    <meta property="twitter:description" content="Web developer, PHP programmer and technology enthusiast!" />
+    <meta property="twitter:image" content="https://kaiopiola.dev/icon_transparente.png" />
+    <meta property="twitter:url" content="https://kaiopiola.dev" />
+    <meta property="twitter:card" content="summary" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLMCEQC2EH"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="row text-center">
+                <span><img src="logo_vite.svg" style="max-width: 8rem;" class="img-fluid" alt="Vite Logo"></span>
+                <h1>Laravel Vite</h1>
+            </div>
+            <hr>
+            <h3>Installation</h3>
+            <ol>
+            <li>
+                <div class="row">
+                        <p>Run the following commands to install NPM dependencies:</p>
+                        <br>
+                        <code>
+                            npm install <br>
+                            npm install vite
+                        </code>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <p>Install SASS by running the following command:</p>
+                        <b>Via NPM</b>
+                        <code>npm i -D  sass</code>
+                        <br>
+                        <b>Via Yarn</b>
+                        <code>yarn add --dev sass</code>
+                    </div>
+                </li>
+            </ol>
+            <h3>Usage</h3>
+            <ol>
+                <li>
+                    <div class="row">
+                        <p>Change this line of file <b>/vite.config.js</b></p>
+                        <b>From</b>
+                        <code>input: ['resources/css/app.css', 'resources/js/app.js'],</code>
+                        <b>To</b>
+                        <code>input: ['resources/sass/app.scss', 'resources/js/app.js'],</code>
+                    </div>
+                </li>
+                <li>
+                    <p>Create the file:</p>
+                    <p><b>/resources/sass/app.scss</b></p>
+                </li>
+                <li>
+                    <p>In your main &lt;head&gt;, add the following line to include all static files automatically:</p>
+                    <code>@vite(['resources/sass/app.scss', 'resources/js/app.js'])</code>
+                </li>
+                <li>
+                    <p>Use the following commands to generate the static files:</p>
+                    <span><code>npm run dev</code> - needs to be running during the development, automatically refresh the page after any changes in any file.</span><br>
+                    <span><code>npm run build</code> - compiles the final static  files of the project, for production usage.</span>
+                </li>
+            </ol>
+            <section>
+                <a href="https://kaiopiola.dev" class="btn btn-dark">Back home</a>
+            </section>
+        </div>
+    </main>
+    <footer class="text-center mb-3">
+        <div class="container">
+            <hr>
+            <a class="text-decoration-none text-muted" href="https://kaiopiola.dev"><span class="text-muted">2022 - Kaio Piola</span></a>
+        </div>
+    </footer>
+</body>
+</html>
