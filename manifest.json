@@ -1,0 +1,12 @@
+{
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "orientation": "any",
+    "display": "standalone",
+    "dir": "auto",
+    "lang": "pt-BR",
+    "name": "KAIOPIOLA.DEV",
+    "short_name": "KAIOPIOLA.DEV",
+    "start_url": "https://kaiopiola.dev",
+    "scope": "https://kaiopiola.dev"
+}
